@@ -4,6 +4,8 @@ import sort.heap.HeapSortData;
 import util.AlgoVisuHelper;
 
 import java.awt.*;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 public class AlgoVisualizer {
@@ -30,37 +32,75 @@ public class AlgoVisualizer {
         });
     }
 
-    //非递归
-    private boolean run() {
+    // bfs
+    private void run() {
+        boolean isSolved = false;
         setData();
-        Stack<Position> pos = new Stack<>();
-        pos.push(new Position(data.getEntranceX(), data.getEntranceY()));
+        LinkedList<Position> stack = new LinkedList<Position>();
+        stack.addLast(new Position(data.getEntranceX(), data.getEntranceY()));
         data.visited[data.getEntranceX()][data.getEntranceY()] = true;
-        while (!pos.empty()) {
-            Position tmp = pos.pop();
-            data.path[tmp.getX()][tmp.getY()] = true;
-            setData();
-            if (tmp.getX() == data.getExitX() && tmp.getY() == data.getExitY())
-                 break;
+        while (!stack.isEmpty()) {
+            Position tmp = stack.pop();
+//            data.path[tmp.getX()][tmp.getY()] = true;
+//            setData();
+            if (tmp.getX() == data.getExitX() && tmp.getY() == data.getExitY()) {
+                isSolved = true;
+                findPath(tmp);
+                break;
+
+            }
+            for (int i = 0; i < 4; i++) {
+                int newX = tmp.getX() + offset[i][0];
+                int newY = tmp.getY() + offset[i][1];
+
+                if (data.inArea(newX, newY) && data.getMaze(newX, newY) == data.ROAD && !data.visited[newX][newY]) {
+                    stack.addLast(new Position(newX, newY, tmp));
+                    data.visited[newX][newY] = true;
+
+                }
+            }
+        }
+        if (!isSolved)
+            System.out.println("the maze has no solution");
+        setData();
+    }
+
+    // dfs非递归
+    /*private void run() {
+        boolean isSolved = false;
+        setData();
+        Stack<Position> stack = new Stack<>();
+        stack.push(new Position(data.getEntranceX(), data.getEntranceY()));
+        data.visited[data.getEntranceX()][data.getEntranceY()] = true;
+        while (!stack.empty()) {
+            Position tmp = stack.pop();
+//            data.path[tmp.getX()][tmp.getY()] = true;
+//            setData();
+            if (tmp.getX() == data.getExitX() && tmp.getY() == data.getExitY()){
+                isSolved = true;
+                findPath(tmp);
+                break;
+
+            }
             for (int i = 0; i < 4; i++) {
                 int newX = tmp.getX() + offset[i][0];
                 int newY = tmp.getY() + offset[i][1];
 
                 if (data.inArea(newX,newY) && data.getMaze(newX,newY) == data.ROAD && !data.visited[newX][newY])
                 {
-                    pos.push(new Position(newX,newY));
+                    stack.push(new Position(newX,newY,tmp));
                     data.visited[newX][newY] = true;
 
                 }
             }
         }
+        if (!isSolved)
+            System.out.println("the maze has no solution");
         setData();
-        System.out.println("the maze has no solution");
-        return false;
-    }
-    // 递归
-    /*private void run() {
+    }*/
 
+    // dfs递归
+    /*private void run() {
         setData();
         if (!go(data.getEntranceX(),data.getEntranceY()))
         {
@@ -68,10 +108,7 @@ public class AlgoVisualizer {
             return;
         }
         setData();
-
     }
-
-
     private boolean  go(int x,int y){
         if (!data.inArea(x,y))
             throw new IllegalArgumentException("x or y are out of index in maze");
@@ -100,5 +137,12 @@ public class AlgoVisualizer {
         AlgoVisuHelper.pause(DELAY);
     }
 
+    private void findPath(Position pos) {
+        while (pos != null) {
+            data.path[pos.getX()][pos.getY()] = true;
+            pos = pos.getPre();
+        }
+        setData();
+    }
 
 }
