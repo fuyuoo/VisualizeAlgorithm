@@ -1,6 +1,6 @@
 package sort.QuickSort;
 
-import sort.util.AlgoVisuHelper;
+import util.AlgoVisuHelper;
 
 import javax.swing.*;
 import java.awt.*;

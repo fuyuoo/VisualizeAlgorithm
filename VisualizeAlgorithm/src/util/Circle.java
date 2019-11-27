@@ -1,4 +1,4 @@
-package sort.util;
+package util;
 
 import java.awt.*;
 

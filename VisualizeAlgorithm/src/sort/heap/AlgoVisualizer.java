@@ -1,6 +1,6 @@
 package sort.heap;
 
-import sort.util.AlgoVisuHelper;
+import util.AlgoVisuHelper;
 
 import java.awt.*;
 

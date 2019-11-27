@@ -1,9 +1,11 @@
-package sort.heap;
+package Maze;
 
+import sort.heap.HeapSortData;
 import util.AlgoVisuHelper;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.Date;
 
 public class AlgoFrame extends JFrame {
 
@@ -40,9 +42,9 @@ public class AlgoFrame extends JFrame {
     }
 
     //Todo
-    private HeapSortData data;
+    private MazeData data;
 
-    public void render(HeapSortData data) {
+    public void render(MazeData data) {
         this.data = data;
         repaint();
     }
@@ -67,14 +69,19 @@ public class AlgoFrame extends JFrame {
 
             //Todo
             int w = canvasWidth / data.N();
+            int h = canvasWidth /data.M();
             for (int i = 0; i < data.N(); ++i) {
+                for (int j = 0; j < data.M(); j++) {
+                    if (data.getMaze(i,j) == data.BAFFLE)
+                        AlgoVisuHelper.setColor(g2d,AlgoVisuHelper.Teal);
+                    else
+                        AlgoVisuHelper.setColor(g2d,AlgoVisuHelper.White);
+                    if (data.path[i][j])
+                        AlgoVisuHelper.setColor(g2d,AlgoVisuHelper.Purple);
 
-                if (i >= data.heapIndex) {
-                    AlgoVisuHelper.setColor(g2d, AlgoVisuHelper.Green);
-                } else
-                    AlgoVisuHelper.setColor(g2d, AlgoVisuHelper.Grey);
+                    AlgoVisuHelper.fillRectangle(g2d, j * w, i*h,w,h);
+                }
 
-                AlgoVisuHelper.fillRectangle(g2d, i * w, canvasHeight - data.get(i), w - 1, data.get(i));
             }
 
         }

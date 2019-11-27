@@ -1,5 +1,5 @@
 package sort.other;
-import sort.util.Circle;
+import util.Circle;
 
 import java.awt.*;
 import java.util.LinkedList;

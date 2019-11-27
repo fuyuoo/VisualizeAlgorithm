@@ -1,6 +1,6 @@
 package sort.insertion;
 
-import sort.util.AlgoVisuHelper;
+import util.AlgoVisuHelper;
 
 import java.awt.*;
 
