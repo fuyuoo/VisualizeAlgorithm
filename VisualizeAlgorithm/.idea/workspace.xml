@@ -3,38 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="afdbe552-9dfe-4db5-b388-e6fbdce8d947" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/Maze/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/Maze/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/Maze/MazeData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/Maze/MazeData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/sort/QuickSort/AlgoFrame$AlgoCanvans.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/sort/QuickSort/AlgoFrame$AlgoCanvans.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/sort/QuickSort/AlgoVisualizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/sort/QuickSort/AlgoVisualizer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/sort/heap/AlgoFrame$AlgoCanvans.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/sort/heap/AlgoFrame$AlgoCanvans.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/sort/heap/AlgoVisualizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/sort/heap/AlgoVisualizer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/sort/insertion/AlgoFrame$AlgoCanvans.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/sort/insertion/AlgoFrame$AlgoCanvans.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/sort/insertion/AlgoVisualizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/sort/insertion/AlgoVisualizer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/sort/merge/AlgoFrame$AlgoCanvans.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/sort/merge/AlgoFrame$AlgoCanvans.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/sort/merge/AlgoVisualizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/sort/merge/AlgoVisualizer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/sort/other/MonterCarloPiData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/sort/other/MonterCarloPiData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/sort/selection/AlgoFrame$AlgoCanvans.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/sort/selection/AlgoFrame$AlgoCanvans.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/sort/selection/AlgoVisualizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/sort/selection/AlgoVisualizer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/sort/util/AlgoVisuHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/sort/util/Circle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/sort/util/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Maze/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Maze/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Maze/MazeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Maze/MazeData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sort/QuickSort/AlgoFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/QuickSort/AlgoFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sort/QuickSort/AlgoVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/QuickSort/AlgoVisualizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sort/heap/AlgoFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/heap/AlgoFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sort/heap/AlgoVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/heap/AlgoVisualizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sort/insertion/AlgoFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/insertion/AlgoFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sort/insertion/AlgoVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/insertion/AlgoVisualizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sort/merge/AlgoFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/merge/AlgoFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sort/merge/AlgoVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/merge/AlgoVisualizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sort/other/MonterCarloPiData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/other/MonterCarloPiData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sort/selection/AlgoFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/selection/AlgoFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sort/selection/AlgoVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/selection/AlgoVisualizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sort/util/AlgoVisuHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/AlgoVisuHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sort/util/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sort/util/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/Maze/AlgoVisualizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/Maze/AlgoVisualizer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Maze/AlgoVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Maze/AlgoVisualizer.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -160,7 +130,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main (3)" />
-        <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.ThreeGatesExperiment" />
@@ -185,7 +154,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
