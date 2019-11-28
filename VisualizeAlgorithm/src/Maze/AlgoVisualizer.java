@@ -41,8 +41,6 @@ public class AlgoVisualizer {
         data.visited[data.getEntranceX()][data.getEntranceY()] = true;
         while (!stack.isEmpty()) {
             Position tmp = stack.pop();
-//            data.path[tmp.getX()][tmp.getY()] = true;
-//            setData();
             if (tmp.getX() == data.getExitX() && tmp.getY() == data.getExitY()) {
                 isSolved = true;
                 findPath(tmp);

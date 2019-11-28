@@ -19,7 +19,6 @@ public class RandomList<E> {
         q.set(randIndex,q.get(q.size()-1));
         q.remove(q.size()-1);
 
-
         return ret;
     }
     public int size(){

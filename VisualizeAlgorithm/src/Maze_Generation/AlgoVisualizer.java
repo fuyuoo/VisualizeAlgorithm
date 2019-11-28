@@ -15,7 +15,7 @@ public class AlgoVisualizer {
     private int sceneWidth;
     private int sceneHeight;
     private static int blockSide = 8;
-    private int DELAY = 10;
+    private int DELAY = 2;
     private boolean visited[][];
 
     private static final int[][] offset = {{-1, 0}, {0, 1}, {1, 0}, {0, -1}};
@@ -37,7 +37,8 @@ public class AlgoVisualizer {
     private void run() {
         setData();
         visited[data.getEntranceX()][data.getEntranceY() + 1] = true;
-        Position pos = new Position(data.getEntranceX(),data.getEntranceY() + 1);
+        Position pos = new Position(data.getEntranceX(), data.getEntranceY() + 1);
+        data.openMist(data.getEntranceX(), data.getEntranceY() + 1);
         go(pos);
 
         setData();
@@ -96,24 +97,58 @@ public class AlgoVisualizer {
         }
     }*/
     // RandomList
-        private void go(Position pos){
-        RandomList<Position> stack = new RandomList<>();
+    private void go(Position pos) {
+        RandomList2<Position> stack = new RandomList2<>();
         stack.add(pos);
-        while (stack.size() != 0){
+        while (stack.size() != 0) {
             Position tmp = stack.remote();
             for (int i = 0; i < 4; i++) {
-                int newX = tmp.getX()+ offset[i][0] * 2;
+                int newX = tmp.getX() + offset[i][0] * 2;
                 int newY = tmp.getY() + offset[i][1] * 2;
                 if (data.inArea(newX, newY) && !visited[newX][newY]) {
                     visited[newX][newY] = true;
-                    data.maze[tmp.getX() + offset[i][0]][tmp.getY() + offset[i][1]] =  MazeData.ROAD;
+                    data.maze[tmp.getX() + offset[i][0]][tmp.getY() + offset[i][1]] = MazeData.ROAD;
+                    data.openMist(newX, newY);
                     setData();
-                    stack.add(new Position(newX,newY));
+                    stack.add(new Position(newX, newY));
                 }
             }
         }
+        FinshMaze();
     }
 
+    // dfs递归
+    private void FinshMaze() {
+        setData();
+        if (!goMaze(data.getEntranceX(), data.getEntranceY())) {
+            System.out.println("the maze has no solution");
+            return;
+        }
+        setData();
+    }
+
+    private boolean goMaze(int x, int y) {
+        if (!data.inArea(x, y))
+            throw new IllegalArgumentException("x or y are out of index in maze");
+        data.visited[x][y] = true;
+        data.path[x][y] = true;
+        setData();
+        if (x == data.getExitX() && y == data.getExitY())
+            return true;
+
+        for (int i = 0; i < 4; i++) {
+            int newX = x + offset[i][0];
+            int newY = y + offset[i][1];
+            if (data.inArea(newX, newY) && data.maze[newX][newY] == data.ROAD && !data.visited[newX][newY]) {
+                if (goMaze(newX, newY))
+                    return true;
+            }
+        }
+        data.path[x][y] = false;
+        setData();
+        return false;
+
+    }
 
     private void setData() {
         algoFrame.render(data);

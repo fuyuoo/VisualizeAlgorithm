@@ -65,17 +65,18 @@ public class AlgoFrame extends JFrame {
             hints.put(RenderingHints.KEY_RENDERING, RenderingHints.VALUE_RENDER_QUALITY);
             g2d.addRenderingHints(hints);
 
-            //Todo
             int w = canvasWidth / data.M();
             int h = canvasHeight / data.N();
             for (int i = 0; i < data.N(); ++i) {
                 for (int j = 0; j < data.M(); j++) {
-                    if (data.maze[i][j] == MazeData.WALL)
+                    if (!data.outMist[i][j])
+                        AlgoVisuHelper.setColor(g2d, AlgoVisuHelper.Black);
+                    else if (data.maze[i][j] == MazeData.WALL)
                         AlgoVisuHelper.setColor(g2d, AlgoVisuHelper.Teal);
                     else
                         AlgoVisuHelper.setColor(g2d, AlgoVisuHelper.White);
-//                    if (data.path[i][j])
-//                        AlgoVisuHelper.setColor(g2d,AlgoVisuHelper.Purple);
+                    if (data.path[i][j])
+                        AlgoVisuHelper.setColor(g2d, AlgoVisuHelper.Purple);
 
                     AlgoVisuHelper.fillRectangle(g2d, j * w, i * h, w, h);
                 }

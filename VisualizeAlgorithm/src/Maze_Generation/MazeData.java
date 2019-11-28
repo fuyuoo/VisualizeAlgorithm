@@ -1,5 +1,7 @@
 package Maze_Generation;
 
+import java.util.Date;
+
 public class MazeData {
     public static final char ROAD = ' ';
     public static final char WALL = '#';
@@ -7,6 +9,9 @@ public class MazeData {
     public char[][] maze;
     private int entranceX, entranceY;
     private int exitX, exitY;
+    public boolean visited[][];
+    public boolean outMist[][];
+    public boolean path[][];
 
 
     public MazeData(int N, int M) {
@@ -15,8 +20,11 @@ public class MazeData {
         this.N = N;
         this.M = M;
         maze = new char[N][M];
+        outMist = new boolean[N][M];
+        visited = new boolean[N][M];
+        path = new boolean[N][M];
         for (int i = 0; i < N; i++) {
-            for (int j = 0; j < M ; j++) {
+            for (int j = 0; j < M; j++) {
                 if (j % 2 == 1 && i % 2 == 1)
                     maze[i][j] = ROAD;
                 else
@@ -30,10 +38,23 @@ public class MazeData {
         maze[entranceX][entranceY] = ROAD;
         maze[exitX][exitY] = ROAD;
     }
-    public boolean inArea(int x,int y){
-        if (x >=0 && x < N && y >=0 && y <M)
+
+    public boolean inArea(int x, int y) {
+        if (x >= 0 && x < N && y >= 0 && y < M)
             return true;
         return false;
+    }
+
+    public void openMist(int x, int y) {
+        if (inArea(x, y)) {
+            for (int i = x - 1; i < x + 1; i++) {
+                for (int j = y - 1; j < y + 1; j++) {
+                    if (inArea(i, j))
+                        outMist[i][j] = true;
+                }
+            }
+        }
+
     }
 
     public int N() {
