@@ -3,18 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="afdbe552-9dfe-4db5-b388-e6fbdce8d947" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/Maze/AlgoVisualizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/Maze/AlgoVisualizer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/Maze/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/Maze_Generation/AlgoFrame$AlgoCanvans.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/Maze_Generation/AlgoFrame$AlgoCanvans.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/Maze_Generation/AlgoVisualizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/Maze_Generation/AlgoVisualizer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/Maze_Generation/MazeData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/Maze_Generation/MazeData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/Maze_Generation/RandomList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/Maze_Generation/RandomList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Maze/AlgoVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Maze/AlgoVisualizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Maze/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Maze_Generation/AlgoFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Maze_Generation/AlgoFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Maze_Generation/AlgoVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Maze_Generation/AlgoVisualizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Maze_Generation/MazeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Maze_Generation/MazeData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Maze_Generation/RandomList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Maze_Generation/RandomList.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +28,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Maze_Generation" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/MineSweeper" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -55,11 +43,11 @@
       <recent name="com.company" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\57424\IdeaProjects\VisualizeAlgorithm\src\MineSweeper" />
       <recent name="C:\Users\57424\IdeaProjects\VisualizeAlgorithm\src\Maze_Generation" />
       <recent name="C:\Users\57424\IdeaProjects\VisualizeAlgorithm\src\Maze" />
       <recent name="C:\Users\57424\IdeaProjects\VisualizeAlgorithm\src\sort\heap" />
       <recent name="C:\Users\57424\IdeaProjects\VisualizeAlgorithm\src\com\QuickSort" />
-      <recent name="C:\Users\57424\IdeaProjects\VisualizeAlgorithm\src\com\merge" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -74,7 +62,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AlgoVisualizer">
+  <component name="RunManager" selected="Application.AlgoVisualizer (1)">
+    <configuration name="AlgoVisualizer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MineSweeper.AlgoVisualizer" />
+      <module name="VisualizeAlgorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MineSweeper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AlgoVisualizer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Maze_Generation.AlgoVisualizer" />
       <module name="VisualizeAlgorithm" />
@@ -114,16 +115,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
-      <module name="VisualizeAlgorithm" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="util.Main" />
       <module name="VisualizeAlgorithm" />
@@ -137,12 +128,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreeGatesExperiment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.other.ThreeGatesExperiment" />
+    <configuration name="ShuffleExp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="util.ShuffleExp" />
       <module name="VisualizeAlgorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.other.*" />
+          <option name="PATTERN" value="util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -152,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AlgoVisualizer (1)" />
+        <item itemvalue="Application.ShuffleExp" />
         <item itemvalue="Application.AlgoVisualizer" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.ThreeGatesExperiment" />
       </list>
     </recent_temporary>
   </component>
