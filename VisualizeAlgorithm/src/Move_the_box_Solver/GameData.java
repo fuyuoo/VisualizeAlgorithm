@@ -16,6 +16,7 @@ public class GameData {
 
     private int offset[][] = {{1, 0}, {0, 1}, {0, -1}};
     private Board showBoard;
+    public int clickx = -1, clicky = -1;
 
     public GameData(String filename) {
 
