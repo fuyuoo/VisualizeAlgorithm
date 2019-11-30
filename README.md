@@ -19,4 +19,7 @@
 ## 扫雷
 * 随机生成地雷以及floodfill算法
 ![image](https://github.com/fuyuoo/VisualizeAlgorithm/blob/master/gif/MineSweeper.gif)
+## 推箱子简易版
+* 自动求解
+![image](https://github.com/fuyuoo/VisualizeAlgorithm/blob/master/gif/MoveBox.gif)
 
