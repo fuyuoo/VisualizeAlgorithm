@@ -6,7 +6,9 @@
 * 选择排序
 ![image](https://github.com/fuyuoo/VisualizeAlgorithm/blob/master/gif/SelectSort.gif)
 * 归并排序
-![image](https://github.com/fuyuoo/VisualizeAlgorithm/blob/master/gif/MergeSort.gif)
+![image](https://github.com/fuyuoo/VisualizeAlgorithm/blob/master/gif/SelectSort.gif)
+* 堆排序
+![image](https://github.com/fuyuoo/VisualizeAlgorithm/blob/master/gif/HeapSort.gif)
 * 三路快排
 ![image](https://github.com/fuyuoo/VisualizeAlgorithm/blob/master/gif/QuictSort3Ways.gif)
 
