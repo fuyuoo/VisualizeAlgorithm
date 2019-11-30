@@ -5,6 +5,8 @@ public class Board {
     private int N, M;
     private char[][] data;
     public static char EMPTY = '.';
+    public Board preBoard;
+    public String swapInf;
 
     public Board(String[] lines) {
         if (lines == null)
@@ -25,7 +27,7 @@ public class Board {
         }
     }
 
-    public Board(Board board) {
+    public Board(Board board,Board preBoard,String swapInf) {
         if (board == null)
             throw new IllegalArgumentException("the board is null");
         this.N = board.N;
@@ -36,6 +38,8 @@ public class Board {
                 this.data[i][j] = board.data[i][j];
             }
         }
+        this.preBoard = preBoard;
+        this.swapInf = swapInf;
 
     }
 
@@ -52,7 +56,14 @@ public class Board {
                     return false;
             }
         }
+        printWinStep();
         return true;
+    }
+
+    private void printWinStep() {
+        if (preBoard != null)
+            preBoard.printWinStep();
+        System.out.println(swapInf);
     }
 
     public int N() {

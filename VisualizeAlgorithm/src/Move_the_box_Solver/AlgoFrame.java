@@ -106,6 +106,9 @@ public class AlgoFrame extends JFrame {
                         Color color = colorHashMap.get(c);
                         AlgoVisuHelper.setColor(g2d, color);
                         AlgoVisuHelper.fillRectangle(g2d, j * h + 2, i * w + 2, w - 4, h - 4);
+                        String indexInf = String.format("( %d , %d )",i,j);
+                        AlgoVisuHelper.setColor(g2d,AlgoVisuHelper.White);
+                        AlgoVisuHelper.drawText(g2d,indexInf,j*h + h/2,i*w + w/2);
                     }
                 }
             }

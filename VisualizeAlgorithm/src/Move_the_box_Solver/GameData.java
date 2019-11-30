@@ -12,7 +12,7 @@ public class GameData {
 
     private int maxTurn;
     private int N, M;
-    private Board startboard;
+    private Board startBoard;
 
     private int offset[][] = {{1, 0}, {0, 1}, {0, -1}};
     private Board showBoard;
@@ -40,10 +40,10 @@ public class GameData {
                 String line = scanner.nextLine();
                 lines.add(line);
             }
-            startboard = new Board(lines.toArray(new String[lines.size()]));
-            showBoard = new Board(startboard);
-            this.N = startboard.N();
-            this.M = startboard.M();
+            startBoard = new Board(lines.toArray(new String[lines.size()]));
+            showBoard = new Board(startBoard,null,"");
+            this.N = startBoard.N();
+            this.M = startBoard.M();
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -72,7 +72,7 @@ public class GameData {
     public boolean solve() {
         if (maxTurn < 0)
             return false;
-        return solve(maxTurn, startboard);
+        return solve(maxTurn, startBoard);
     }
 
     private boolean solve(int turns, Board board) {
@@ -81,7 +81,6 @@ public class GameData {
         if (turns == 0)
             return board.isWin();
         if (board.isWin()){
-            System.out.println("have solve");
             return true;
 
         }
@@ -92,7 +91,8 @@ public class GameData {
                         int newX = i + offset[k][0];
                         int newY = j + offset[k][1];
                         if (board.inArea(newX, newY)) {
-                            Board nextBoard = new Board(board);
+                            String swapInf = String.format("( %d , %d ) and ( %d , %d )",i,j,newX,newY);
+                            Board nextBoard = new Board(board,board,swapInf);
                             nextBoard.swap(i, j, newX, newY);
                             nextBoard.run();
                             if (solve(turns-1,nextBoard))

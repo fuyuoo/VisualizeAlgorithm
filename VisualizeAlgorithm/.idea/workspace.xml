@@ -3,6 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="afdbe552-9dfe-4db5-b388-e6fbdce8d947" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/Move_the_box_Solver/AlgoFrame$AlgoCanvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/Move_the_box_Solver/AlgoFrame$AlgoCanvas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/Move_the_box_Solver/AlgoVisualizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/Move_the_box_Solver/AlgoVisualizer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/Move_the_box_Solver/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/Move_the_box_Solver/Board.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/Move_the_box_Solver/GameData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/Move_the_box_Solver/GameData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/sort/QuickSort/AlgoVisualizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/sort/QuickSort/AlgoVisualizer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/sort/insertion/AlgoVisualizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/sort/insertion/AlgoVisualizer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/sort/merge/AlgoVisualizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/sort/merge/AlgoVisualizer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/sort/selection/AlgoVisualizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/sort/selection/AlgoVisualizer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/util/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VisualizeAlgorithm/util/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Move_the_box_Solver/AlgoFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Move_the_box_Solver/AlgoFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Move_the_box_Solver/AlgoVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Move_the_box_Solver/AlgoVisualizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Move_the_box_Solver/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Move_the_box_Solver/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Move_the_box_Solver/GameData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Move_the_box_Solver/GameData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sort/QuickSort/AlgoVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/QuickSort/AlgoVisualizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sort/insertion/AlgoVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/insertion/AlgoVisualizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sort/merge/AlgoVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/merge/AlgoVisualizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sort/selection/AlgoVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/selection/AlgoVisualizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +46,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Move_the_box_Solver" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/level" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -62,7 +80,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AlgoVisualizer (2)">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="AlgoVisualizer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MineSweeper.AlgoVisualizer" />
       <module name="VisualizeAlgorithm" />
@@ -102,12 +120,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Maze.Main" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="util.Main" />
       <module name="VisualizeAlgorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Maze.*" />
+          <option name="PATTERN" value="util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.AlgoVisualizer (2)" />
         <item itemvalue="Application.AlgoVisualizer (1)" />
         <item itemvalue="Application.ShuffleExp" />
         <item itemvalue="Application.AlgoVisualizer" />
-        <item itemvalue="Application.Main (3)" />
       </list>
     </recent_temporary>
   </component>

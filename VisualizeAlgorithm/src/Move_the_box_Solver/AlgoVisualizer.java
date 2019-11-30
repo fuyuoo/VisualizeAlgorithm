@@ -35,14 +35,14 @@ public class AlgoVisualizer {
             System.out.println("have not solution");
     }
 
-    private void setData(){
+    public void setData(){
         frame.render(data);
         AlgoVisuHelper.pause(DELAY);
     }
 
     public static void main(String[] args) {
 
-        String filename = "level/boston_09.txt";
+        String filename = "level/boston_16.txt";
 
         AlgoVisualizer vis = new AlgoVisualizer(filename);
     }

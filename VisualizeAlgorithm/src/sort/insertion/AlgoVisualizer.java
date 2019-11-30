@@ -10,7 +10,7 @@ public class AlgoVisualizer {
     private boolean isAnimated = true;
     private int sceneWidth = 800;
     private int sceneHeight = 800;
-    private int DELAY = 100;
+    private int DELAY = 20;
 
     public AlgoVisualizer(InsertionSortData data) {
         this.data = data;
