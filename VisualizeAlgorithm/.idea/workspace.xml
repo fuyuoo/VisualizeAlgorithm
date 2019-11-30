@@ -28,7 +28,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/MineSweeper" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Move_the_box_Solver" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -43,11 +43,11 @@
       <recent name="com.company" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\57424\IdeaProjects\VisualizeAlgorithm\src\Move_the_box_Solver" />
       <recent name="C:\Users\57424\IdeaProjects\VisualizeAlgorithm\src\MineSweeper" />
       <recent name="C:\Users\57424\IdeaProjects\VisualizeAlgorithm\src\Maze_Generation" />
       <recent name="C:\Users\57424\IdeaProjects\VisualizeAlgorithm\src\Maze" />
       <recent name="C:\Users\57424\IdeaProjects\VisualizeAlgorithm\src\sort\heap" />
-      <recent name="C:\Users\57424\IdeaProjects\VisualizeAlgorithm\src\com\QuickSort" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -62,13 +62,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AlgoVisualizer (1)">
+  <component name="RunManager" selected="Application.AlgoVisualizer (2)">
     <configuration name="AlgoVisualizer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MineSweeper.AlgoVisualizer" />
       <module name="VisualizeAlgorithm" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="MineSweeper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AlgoVisualizer (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Move_the_box_Solver.AlgoVisualizer" />
+      <module name="VisualizeAlgorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Move_the_box_Solver.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,38 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.util.Main" />
-      <module name="VisualizeAlgorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Maze.Main" />
       <module name="VisualizeAlgorithm" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Maze.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="util.Main" />
-      <module name="VisualizeAlgorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AlgoVisualizer (2)" />
         <item itemvalue="Application.AlgoVisualizer (1)" />
         <item itemvalue="Application.ShuffleExp" />
         <item itemvalue="Application.AlgoVisualizer" />
         <item itemvalue="Application.Main (3)" />
-        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
