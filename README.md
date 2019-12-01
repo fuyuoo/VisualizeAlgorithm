@@ -21,6 +21,12 @@
 ![image](https://github.com/fuyuoo/VisualizeAlgorithm/blob/master/gif/MineSweeper.gif)
 ## 推箱子简易版
 * 自动求解
-
 ![image](https://github.com/fuyuoo/VisualizeAlgorithm/blob/master/gif/MoveBox.gif)
+## 分形图绘制
+* Rectangle fractal
+![image](https://github.com/fuyuoo/VisualizeAlgorithm/blob/master/gif/FractalRectangle.gif)
+* Koch snowflake fractal
+![image](https://github.com/fuyuoo/VisualizeAlgorithm/blob/master/gif/KochFractal.gif)
+* Tree  fractal
+![image](https://github.com/fuyuoo/VisualizeAlgorithm/blob/master/gif/FractalTree.gif)
 
