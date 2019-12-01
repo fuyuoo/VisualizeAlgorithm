@@ -1,4 +1,4 @@
-package Recursive.Triangle;
+package Recursive.Tree;
 
 import Recursive.Fractal.FractalData;
 import util.AlgoVisuHelper;
@@ -42,9 +42,9 @@ public class AlgoFrame extends JFrame {
     }
 
     // data
-    private FractalData data;
+    private TreeData data;
 
-    public void render(FractalData data) {
+    public void render(TreeData data) {
         this.data = data;
         repaint();
     }
@@ -56,6 +56,7 @@ public class AlgoFrame extends JFrame {
             super(true);
 
         }
+
         @Override
         public void paintComponent(Graphics g) {
             super.paintComponent(g);
@@ -68,38 +69,26 @@ public class AlgoFrame extends JFrame {
                     RenderingHints.VALUE_ANTIALIAS_ON);
             hints.put(RenderingHints.KEY_RENDERING, RenderingHints.VALUE_RENDER_QUALITY);
             g2d.addRenderingHints(hints);
-            AlgoVisuHelper.setColor(g2d, AlgoVisuHelper.Indigo);
-            drawFractal(g2d,0,canvasHeight-3,canvasWidth,0,0);
+            AlgoVisuHelper.setColor(g2d, AlgoVisuHelper.Teal);
+            drawFractal(g2d, canvasWidth / 2, canvasHeight, canvasHeight, 0, 0);
 
         }
 
         private void drawFractal(Graphics2D g2d, double x1, double y1, double side, double angle, int depth) {
 
-            if (side <= 0) {
+            double side_2 = side / 2;
+            if (side_2 <= 0 || depth == data.depth)
                 return;
-            }
-            if (depth == data.depth) {
-                double x2 = x1 + side * Math.cos(angle * Math.PI / 180.0);
-                double y2 = y1 - side * Math.sin(angle * Math.PI / 180.0);
-                AlgoVisuHelper.drawLine(g2d, x1, y1, x2, y2);
-                return;
-            }
 
-            double side_3 = side / 3;
-            double x2 = x1 + side_3 * Math.cos(angle * Math.PI / 180.0);
-            double y2 = y1 - side_3 * Math.sin(angle * Math.PI / 180.0);
-            drawFractal(g2d, x1, y1, side_3, angle, depth + 1);
+            double x2 = x1 - side_2 * Math.sin(angle * Math.PI / 180.0);
+            double y2 = y1 - side_2 * Math.cos(angle * Math.PI / 180.0);
 
-            double x3 = x2 + side_3 * Math.cos((angle + 60.0) * Math.PI / 180.0);
-            double y3 = y2 - side_3 * Math.sin((angle + 60.0) * Math.PI / 180.0);
-            drawFractal(g2d, x2, y2, side_3, angle + 60, depth + 1);
+            AlgoVisuHelper.setStrokeWidth(g2d, data.depth - depth);
+            AlgoVisuHelper.drawLine(g2d, x1, y1, x2, y2);
+            double ran = Math.random();
 
-            double x4 = x3 + side_3 * Math.cos((angle - 60.0) * Math.PI / 180.0);
-            double y4 = y3 - side_3 * Math.sin((angle - 60.0) * Math.PI / 180.0);
-            drawFractal(g2d, x3, y3, side_3, angle - 60, depth + 1);
-
-            drawFractal(g2d, x4, y4, side_3, angle , depth + 1);
-
+            drawFractal(g2d, x2, y2, side_2, angle + data.splitAngle * ran, depth + 1);
+            drawFractal(g2d, x2, y2, side_2, angle - data.splitAngle * (1 - ran), depth + 1);
 
 
         }

@@ -1,4 +1,4 @@
-package Recursive.Triangle;
+package Recursive.Tree;
 
 import Recursive.Fractal.FractalData;
 import util.AlgoVisuHelper;
@@ -12,16 +12,16 @@ public class AlgoVisualizer {
     private static int DELAY = 5;
     private static int blockSide = 80;
 
-    private FractalData data;
+    private TreeData data;
     private AlgoFrame frame;
 
 
 
-    public AlgoVisualizer(int depth){
+    public AlgoVisualizer(int depth,double splitAngle){
 
-        data = new FractalData(depth);
-        int sceneWidth = (int)Math.pow(2,depth) * 3;
-        int sceneHeight = (int)Math.pow(2,depth) * 3 ;
+        data = new TreeData(depth,splitAngle);
+        int sceneWidth = 1024;
+        int sceneHeight = 768 ;
 
         EventQueue.invokeLater(() -> {
             frame = new AlgoFrame("title", sceneWidth,sceneHeight);
@@ -59,6 +59,6 @@ public class AlgoVisualizer {
     public static void main(String[] args) {
 
 
-        AlgoVisualizer vis = new AlgoVisualizer(7);
+        AlgoVisualizer vis = new AlgoVisualizer(10,60);
     }
 }
